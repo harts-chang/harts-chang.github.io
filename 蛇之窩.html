@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛇之窩</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+     crossorigin="anonymous">
+    
+    <style>
+
+
+
+        #nav { 
+            height: 100px; 
+        }
+
+        #footer{
+            height: 100px;
+            text-align: center;
+        }
+
+        .parallax{
+        height: 900px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/bootstrap練習/我的/超級蛇.jpg");
+        background-attachment: fixed;
+    }
+
+
+    </style>
+
+</head>
+<body class="bg-dark">
+
+    <header>
+        <nav>
+          <div class="container-fluid ">
+            <div id="nav" class=" text-center text-warning pt-3 bg-dark">
+              <h1>蛇之窩</h1>
+            </div>
+          </div>
+        </nav>
+        <div id="banner" class="container-fluid mb-2 ">
+          <div id="carouselExampleControls" 
+                class="carousel slide" 
+                data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/bootstrap練習/我的/張口.jpg" 
+                        height="700px" 
+                        class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="/bootstrap練習/我的/大蟒蛇.jpg"
+                        height="700px" 
+                        class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="/bootstrap練習/我的/蓄勢待發.jpg"
+                        height="700px" 
+                        class="d-block w-100" >
+              </div>
+            </div>
+            <a class="carousel-control-prev" 
+                    href="#carouselExampleControls" 
+                    role="button" 
+                    data-slide="prev">
+              <span class="carousel-control-prev-icon" 
+                        aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" 
+                    href="#carouselExampleControls" 
+                    role="button" 
+                    data-slide="next">
+              <span class="carousel-control-next-icon" 
+                    aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    
+      <main>
+        <section class="bg-success">
+          <div class="container bg-dark mb-2 justify-content-center">
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="card m-auto" 
+                        style="width: 21rem;">
+                  <img src="/bootstrap練習/我的/內陸太攀蛇.jpg"
+                        class="card-img-top">
+                  <div class="card-body">
+                    <h1 class="card-title text-center">太攀蛇</h1>
+                    <button type="button" 
+                        class="btn btn-primary" 
+                        onclick="creattext(1)"
+                         data-toggle="modal" 
+                         data-target="#exampleModalLong">
+                         目前已知地球最毒之蛇
+                    </button>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="card m-auto" style="width: 21rem;">
+              <img src="/bootstrap練習/我的/眼鏡王蛇.png"
+                class="card-img-top">
+              <div class="card-body">
+                <h1 class="card-title text-center">眼鏡王蛇</h1>
+                <button type="button" 
+                    class="btn btn-primary" 
+                    onclick="creattext(3)"
+                    data-toggle="modal" 
+                    data-target="#exampleModalLong">
+                    連老虎叢林之王也要稱臣
+                </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 col-12 my-5">
+                <div class="card m-auto" 
+                style="width: 21rem;">
+                  <img src="/bootstrap練習/我的/角蝰.jpg"
+                    class="card-img-top">
+                  <div class="card-body">
+                    <h1 class="card-title text-center">角蝰</h1>
+                    <button type="button" 
+                        class="btn btn-primary" 
+                        onclick="creattext(2)"
+                        data-toggle="modal" 
+                        data-target="#exampleModalLong">
+                        沙漠忍者也稱沙漠死神
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" 
+                id="exampleModalLong" 
+                tabindex="-1" 
+                role="dialog"
+                aria-labelledby="exampleModalLongTitle" 
+                aria-hidden="true">
+              <div class="modal-dialog" 
+                role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" 
+                        id="exampleModalLongTitle">...</h5>
+                    <button type="button" 
+                        class="close" 
+                        data-dismiss="modal" 
+                        aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" 
+                        class="btn btn-secondary" 
+                        data-dismiss="modal">承認</button>
+                    <button type="button" 
+                        class="btn btn-primary">不承認</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section>
+          <div class="container-fluid  mb-2">
+            <div class="parallax"></div>
+          </div>
+        </section>
+    
+        <section>
+          <div class="container  mb-2">
+            <div class="row">
+              <div class="col text-center">
+                <h1 class="text-info">最強一二名介紹</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-12 p-0">
+                <img src="/bootstrap練習/我的/角蝰2.jpg" 
+                    height="100%" 
+                    width="100%">
+              </div>
+              <div class="col-lg-6 col-12 p-0 text-center d-flex justify-content-center align-items-center">
+                <span class="text-danger">
+                    沙漠角蝰：頭上長角的致命毒蛇_沙漠角蝰，是蛇亞目蝰蛇科蝰亞科下的一個有毒蛇屬，主要包括分布於非洲北部、阿拉伯半島及伊朗等沙漠地帶的一種蝰蛇；沙漠角蝰出沒於荒涼乾旱的納米布沙漠的風積沙丘。當它扭擺身軀拂掠疾行時，沙漠表 面會留下明顯的S型蹤跡，此時它的細長身軀其實只有3處會與地面直接接觸，藉此避免腹部溫度升高；跟所有響尾蛇科的其他蛇類一樣，沙漠角蝰也有一對可以活動的中空；毒牙，除了發動攻擊之外，平時這對毒牙都收放在它的上頜處；它的毒牙很大，裝滿了毒液，毒性也很厲害，能在數秒間殺死獵物。以蜥蜴和小型哺乳動物為食，它可以擺動尾部潛伏在沙漠中，不易發現。沙漠角蝰是沙漠地帶最常見的典型毒蛇之一，在伊拉克南部沙漠地區很常見角蝰可將將自己的身體埋在沙土中，只露出眼睛、鼻口以及頭上的角，捕殺獵物。
+                </span>
+              </div>
+            </div>
+            <div class="flex-lg-row d-flex flex-column-reverse">
+              <div class="col-lg-6 col-12 p-0 text-center d-flex justify-content-center align-items-center">
+                <span class="text-danger">
+                    地表最強毒蛇:內陸太攀蛇-又稱兇猛太攀蛇、西部太攀蛇_分布於澳洲東部；棲居在乾涸的沖積平原上。雖是已知毒性最強蛇種，但牠們害羞，很少發現，於1879由愛爾蘭動物學家弗雷德里克‧麥考伊(Frederick McCoy)發現並描述牠，1882年William John Macleay再報告後就消失近百年，直到1972年牠被重新發現後，確定為太攀蛇。野外以小型齧齒類、有袋動物或鳥類為食，在人工飼養上，可以提供大小白鼠，也會受日齡雞；卵生，每次約產下12～20顆的卵，其母蛇則將其。其母蛇則將其產在被動物棄置的洞穴或岩縫中，經兩個月後即孵化成幼蛇。行動迅速隱密，遇到威脅常是消極離開，但發怒會將身體前軀抬離地面，並成Ｓ型作勢開咬，毒牙長為3.5～6.2mm左右；單次噬咬所釋出的毒液也不多，約44～110mg，但每單一口毒液能使100位成年男性致死，毒囊內存的毒液則足以殺死50萬隻老鼠，科學家目前還不知，其為何須擁有毒性如此強烈的毒液。體長平均1.8～2公尺，最大紀錄達2.5公尺，棺材型的頭部成黑色略尖，眼睛相對較大，有灰色到黃褐色的鱗片，有時會鑲著細黑邊，體色可隨季節變換，藉此吸收外界溫度；冬季時呈現深棕色；而夏季則呈淺橄欖色。
+                </span>
+              </div>
+              <div class="col-lg-6 col-12 p-0">
+                <img src="/bootstrap練習/我的/內陸太攀蛇2.jpg" 
+                    height="100%" 
+                    width="100%">
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <div class="container-fluid  border-top border-success">
+          <div id="footer" 
+                class=" text-danger text-center ">
+            <strong><h1>謝謝GOOGLE提供參考</h1></strong>
+          </div>
+        </div>
+      </footer>
+    
+
+<script>
+
+    var exampleModalLongTitle=document.querySelector("#exampleModalLongTitle")
+    var modal_body=document.querySelector(".modal-body")
+
+    function creattext(x){
+        if(x==1){
+      
+            exampleModalLongTitle.innerHTML="太攀蛇"
+            modal_body.innerHTML="目前已知地球最毒之蛇"
+        }
+        else if(x==2){
+            exampleModalLongTitle.innerHTML="角蝰"
+            modal_body.innerHTML="沙漠忍者也稱沙漠死神"
+        }
+        else{
+            exampleModalLongTitle.innerHTML="眼鏡王蛇"
+            modal_body.innerHTML="連老虎叢林之王也要稱臣"
+        }
+    }
+
+</script>
+
+<!-- <nav></nav> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
